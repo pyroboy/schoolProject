@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.name-group {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.name-group p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #333;
+}
+
+#bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  #bottom a {
+    margin: 0 5px;
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  #bottom a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photos</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    width: 10vw;
+    height: 10vh;
+    margin: 5px;
+    transition: all 0.3s;
+    object-fit: scale-down;
+    border-radius: 1000px;
+  }
+  img:hover {
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+  border: 5px solid rgb(255, 255, 255);
+
+  object-fit: scale-down;
+  border-radius: 10px;
+}
+
+</style>
+</head>
+<body>
+<!-- Replace 'image1.jpg', 'image2.jpg', etc. with the actual file names of your photos -->
+<a href="image1.jpg" target="rPanel"><img src="image1.jpg" alt="Photo 1"></a>
+<a href="image2.jpg" target="rPanel"><img src="image2.jpg" alt="Photo 2"></a>
+<!-- Add more images as needed, up to at least 20 photos -->
+</body>
+</html>

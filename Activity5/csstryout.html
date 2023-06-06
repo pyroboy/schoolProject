@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arjo Magno's CSS and Background examples</title>
+	<style>
+		/* Units */
+		p.absolute {
+			position: absolute;
+			top: 50px;
+			left: 100px;
+			width: 200px;
+			height: 100px;
+			background-color: yellow;
+		}
+
+		p.relative {
+			position: relative;
+			top: 20%;
+			left: 10%;
+			width: 50%;
+			padding: 10px;
+			border: 1px solid black;
+			background-color: lightblue;
+		}
+
+		p.negative {
+			margin-top: -20px;
+			margin-bottom: -10px;
+			padding-left: -5px;
+			color: red;
+		}
+
+		/* Colors */
+		p.color-names {
+			color: red;
+			background-color: cornflowerblue;
+		}
+
+		p.decimal-colors {
+			color: rgb(255, 0, 0);
+			background-color: rgb(100, 149, 237);
+		}
+
+		p.hexadecimal-colors {
+			color: #00ff00;
+			background-color: #800080;
+		}
+
+		p.gray-colors {
+			color: gray;
+			background-color: lightgray;
+		}
+
+		p.rgb-colors {
+			color: rgb(50%, 0%, 50%);
+			background-color: rgb(0%, 50%, 100%);
+		}
+
+		p.hsl-colors {
+			color: hsl(240, 100%, 50%);
+			background-color: hsl(120, 60%, 70%);
+		}
+
+		p.hwb-colors {
+			color: hwb(240, 0%, 0%);
+			background-color: hwb(120 12% 25%);
+		}
+
+		p.currentcolor {
+			color: currentcolor;
+			background-color: #eee;
+		}
+
+		p.gradient {
+ background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+	div.overlapping {
+		position: relative;
+	}
+
+	div.overlapping img {
+		position: absolute;
+		top: -100px;
+		right: 50vw;
+		z-index: 1;
+        width: 200px;
+	}
+
+	div.overlapping h1 {
+		position: relative;
+		z-index: 2;
+        top: -100px;
+		left: 200px;
+
+		color: white;
+		text-shadow: 2px 2px black;
+	}
+
+
+    div.multiple-images  {
+        background-image: 
+        
+        
+        url("https://cdn.pixabay.com/photo/2015/01/07/11/31/tigers-591359_960_720.jpg"),
+        url("https://cdn.pixabay.com/photo/2016/02/13/12/26/aurora-1197753_960_720.jpg"),
+        url("https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg");
+        background-position: center center, top left , bottom right;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        /* background-size: cover, 10%, 10%; */
+        background-size: 130px, 130px,cover;
+        width: 50vw;
+        height: 50vh;
+      }
+
+
+      div.stretch{
+
+        background-image: url("https://cdn.pixabay.com/photo/2016/11/14/04/36/boy-1822614_960_720.jpg");
+        background-size: cover;
+        width:100vw;
+        height:100px;
+      }
+
+div.scrollable{
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/14/04/36/boy-1822614_960_720.jpg");
+      width:100vw;
+        height:100px;
+    
+}
+
+      div.non-scrollable{
+        background-image: url("https://cdn.pixabay.com/photo/2016/11/14/04/36/boy-1822614_960_720.jpg");
+      background-attachment: fixed;
+      width:100vw;
+        height:100px;
+      }
+
+      div.opacity{
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/14/04/36/boy-1822614_960_720.jpg");
+      width:100vw;
+        height:100px;
+        opacity: 50%;
+    
+}
+
+</style>
+</head>
+<body>
+	<h1>CSS Examples</h1>
+<h2>Units</h2>
+<p class="absolute">I am positioned absolutely.</p>
+<p class="relative">I am positioned relatively.</p>
+<p class="negative">I am using negative values for margins and padding.</p>
+
+<h2>Colors</h2>
+<p class="color-names">I am using named colors.</p>
+<p class="decimal-colors">I am using decimal colors.</p>
+<p class="hexadecimal-colors">I am using hexadecimal colors.</p>
+<p class="gray-colors">I am using gray colors.</p>
+<p class="rgb-colors">I am using RGB colors.</p>
+<p class="hsl-colors">I am using HSL colors.</p>
+<p class="hwb-colors">I am using HWB colors.</p>
+<p class="currentcolor">I am using currentcolor.</p>
+<p class="gradient">I have a gradient background.</p>
+
+<h2>Background Images</h2>
+<p>I have multiple background images.</p>
+<div class="multiple-images">
+</div>
+<p>I am stretching a single background image to fit the window.</p>
+<div class="stretch">
+</div>
+<p>I have a scrollable background image.</p>
+<div class="scrollable">
+</div>
+<p>I have a non-scrollable background image.</p>
+<div class="non-scrollable">
+</div>
+<p>I have an image with reduced opacity.</p>
+<div class="opacity">
+</div>
+<div class="overlapping">
+	<img src="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg" alt="Flower">
+	<h1>I am overlapping an image.</h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>Your page title here :</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+      
+        <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <!-- FONT
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+      
+        <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/skeleton.css">
+        <script type="text/javascript" src="../js/main.js"></script>
+      
+        <!-- Favicon
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="icon" type="image/png" href="../images/favicon.png">
+      
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+    
+            .container {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                height: 100vh;
+                border: 3px;
+                border-color: rgb(233, 233, 233);
+                border-style: solid;
+
+            }
+    
+            .row {
+                content: "";
+                clear: both;
+                display: flex;
+
+            }
+    
+            .column {
+                float: left;
+                width: 50%;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Me</a>
+                    <ul class="accordion-content">
+                        <li><a href="#">my name is - A R J O - </a></li>
+                        <li><a href="#">My Family</a>
+                        </li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Activity13/friendsRegGoogleSheets.html">Register as Friend</a>
+                    <ul class="accordion-content">
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Our History</a>
+                            <ul class="accordion-content">
+                                <li><a href="#">2000-2010</a></li>
+                                <li><a href="#">2010-2020</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <!-- <div class="sidebar">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Philosophy</a>
+            <a href="../Activity13/friendsRegGoogleSheets.html">Register as Friend</a>
+        </div> -->
+        <div class="container">
+            <h1>Arjo's Friend Registry</h1>
+                       <!-- add a hyperlink -->
+            <a href="https://docs.google.com/spreadsheets/d/1e0CfWi45IEo4GVz9RAXswxLE7SufAjeEQ4Vs6nA0giQ/edit?usp=sharing">
+                Friends List Here</a>
+
+ <br />
+                <a href="https://docs.google.com/spreadsheets/d/1e0CfWi45IEo4GVz9RAXswxLE7SufAjeEQ4Vs6nA0giQ/export?format=xlsx">
+                    Download XLSX here. </a>
+            <hr />
+            <form action="https://script.google.com/macros/s/AKfycbzEihHXF3Uob2v6SyGmLZ3iuLPzGr3HnmTRwqNe9bw1WcHbfwsbPoE2SbjvXuVZdG1x/exec" method="POST">
+                <div class="row">
+                    <div class="column">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="First name"><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="Last name"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="Email"><br>
+                    </div>
+                    <div class="column">
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="Phone number"><br>
+                        <label for="bday">Birthday:</label>
+                        <input type="date" id="bday" name="Birthday"><br>
+                        <br>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="Address"><br>
+                        <br>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+
+
+</html>
+

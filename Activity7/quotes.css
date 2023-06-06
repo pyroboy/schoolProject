@@ -1,0 +1,72 @@
+/* Apply different background color to each HTML document */
+body {
+    background-color: #F9F9F9; /* Quote 1 */
+  }
+  
+  /* Effects for links */
+  a {
+    color: #333; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+  }
+  
+  a:hover {
+    color: #FF0000; /* Hover color */
+  }
+  
+  /* Style the header as tab-like */
+  header {
+    background-color: #333; /* Header background color */
+    padding: 10px 0;
+    text-align: center; /* Center-align the tabs */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #FFF; /* Tab text color */
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #555; /* Tab hover background color */
+  }
+  
+  nav a.active {
+    background-color: #555; /* Active tab background color */
+  }
+  
+  /* Style the quote div */
+.quote {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFF;
+    border: 1px solid #333;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .quote h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .quote p {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+  }

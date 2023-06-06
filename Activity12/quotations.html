@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotations</title>
+    <style>
+        /* Entire Page */
+/* Entire Page */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  background-image: url("background1.jpg"), url("background2.jpg"), url("background3.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.quotation-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-padding:5%;
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+}
+
+/* Quotations */
+.quotation {
+  display: inline-block;
+  height: 60vh;
+  min-width: 94vw;
+  margin: 1.5vw ;
+  outline: 1px solid #333;
+  border: 1px solid #333;
+  padding: 10px;
+  font-size: 20px;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quotation span:first-child::first-letter {
+    font-size: 100px;
+    font-weight: bold;
+    color: #333;
+    text-transform: capitalize;
+    vertical-align: middle;
+    float: left;
+      margin-top: -0.4em;
+      padding-right: 0.1em;
+  }
+
+        .quotation span:first-child {
+          
+            display: block;
+            font-weight: bold;
+            white-space: normal;
+            word-wrap: break-word;
+            align-self: center;
+        }
+
+        /* Home Button */
+        #home-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+  <div id="content">
+    <h1>Points to Ponder</h1>
+    <div class="quotation-container">
+    <div class="quotation">
+      <span>A man is but the product of his thoughts; what he thinks, he becomes.</span>
+      <span>- Mahatma Gandhi</span>
+    </div>
+    <div class="quotation">
+      <span>Anyone who has never made a mistake has never tried anything new.</span>
+      <span>- Albert Einstein</span>
+    </div>
+    <div class="quotation">
+      <span>Be a student as long as you still have something to learn, and this will mean all your life.</span>
+      <span>- Henry L. Doherty</span>
+    </div>
+    <div class="quotation">
+      <span>Don't say you don't have enough time. You have exactly the same number of hours per day that were given to Helen Keller, Pasteur, Michelangelo, Mother Teresa, Leonardo da Vinci, Thomas Jefferson, and Albert Einstein.</span>
+      <span>- H. Jackson Brown Jr.</span>
+    </div>
+    <div class="quotation">
+      <span>Education is the most powerful weapon, which you can use to change the world.</span>
+      <span>- Nelson Mandela</span>
+    </div>
+    <div class="quotation">
+      <span>Education is what survives when what has been learned has been forgotten.</span>
+      <span>- B. F. Skinner</span>
+    </div>
+    <div class="quotation">
+      <span>Even if you're on the right track, you'll get run over if you just sit there.</span>
+      <span>- Will Rogers</span>
+    </div>
+    <div class="quotation">
+      <span>If you don't go after what you want, you'll never have it. If you don't ask, the answer is always no. If you don't step forward, you're always in the same place.</span>
+      <span>- Nora Roberts</span>
+    </div>
+    <div class="quotation">
+      <span>If you hear a voice within you say 'you cannot paint,' then by all means paint, and that voice will be silenced.</span>
+      <span>- Vincent Van Gogh</span>
+    </div>
+    <div class="quotation">
+      <span>Imagination is more important than knowledge.</span>
+      <span>- Albert Einstein</span>
+    </div>
+    <div class="quotation">
+      <span>Knowing is not enough; we must apply. Willing is not enough; we must do.</span>
+      <span>- Johann Wolfgang von Goethe</span>
+    </div>
+    <div class="quotation">
+      <span>Learn from yesterday, live for today, hope for tomorrow.</span>
+      <span>- Albert Einstein</span>
+    </div>
+    <div class="quotation">
+      <span>Live as if you were to die tomorrow. Learn as if you were to live forever.</span>
+      <span>- Mahatma Gandhi</span>
+    </div>
+    <div class="quotation">
+      <span>None are more hopelessly enslaved than those who falsely believed they are free.</span>
+      <span>- Johann Wolfgang von Goethe</span>
+    </div>
+    <div class="quotation">
+      <span>Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.</span>
+      <span>- Thomas A. Edison</span>
+    </div>
+    <div class="quotation">
+      <span>Peace begins with a smile. Every time you smile at someone, it is an action of love, a gift to that person, a beautiful thing.</span>
+      <span>- Mother Teresa</span>
+    </div>
+    <div class="quotation">
+      <span>Success consists of going from failure to failure without loss of enthusiasm.</span>
+      <span>- Winston Churchill</span>
+    </div>
+    <div class="quotation">
+      <span>Take risks. If you win, you will be happy. If you lose, you will be wise.</span>
+      <span>- Unknown</span>
+    </div>
+    <div class="quotation">
+      <span>The art of being wise is the art of knowing what to overlook.</span>
+      <span>- William James</span>
+    </div>
+    <div class="quotation">
+      <span>The bad news is time flies. The good news is you're the pilot.</span>
+      <span>- Michael Altshuler</span>
+    </div>
+    <div class="quotation">
+      <span>The best way to predict your future is to create it.</span>
+      <span>- Abraham Lincoln</span>
+    </div>
+    <div class="quotation">
+      <span>The difference between ordinary and extraordinary is that little extra.</span>
+      <span>- Unknown</span>
+    </div>
+    <div class="quotation">
+      <span>The future starts today, not tomorrow.</span>
+      <span>- Pope John Paul II</span>
+    </div>
+    <div class="quotation">
+      <span>The greatest glory in living lies not in never falling, but in rising every time we fall.</span>
+      <span>- Nelson Mandela</span>
+    </div>
+    <div class="quotation">
+      <span>The important thing is not to stop questioning. Curiosity has its own reason for existing.</span>
+      <span>- Albert Einstein</span>
+    </div>
+    <div class="quotation">
+      <span>The journey of a thousand miles begins with a single step.</span>
+      <span>- Lao Tzu</span>
+    </div>
+    <div class="quotation">
+      <span>Try not to become a man of success, but rather try to become a man of value.</span>
+      <span>- Albert Einstein</span>
+    </div>
+    <div class="quotation">
+      <span>Wake up every morning with the thoughts that something wonderful is about to happen.</span>
+      <span>- Unknown</span>
+    </div>
+    <div class="quotation">
+      <span>Whatever you can do, or dream you can do, begin it. Boldness has genius, power, and magic in it. Begin it now.</span>
+      <span>- Johann Wolfgang von Goethe</span>
+    </div>
+    <div class="quotation">
+      <span>Your time is limited, don't waste it living someone else's life. Don't be trapped by dogma, which is living the result of other people's thinking. Don't let the noise of other's opinion drowned your own inner voice. And most important, have the courage to follow your heart and intuition, they somehow already know what you truly want to become. Everything else is secondary.</span>
+      <span>- Steve Jobs</span>
+    </div>
+</div>
+  </div>
+
+
+  <script>
+    const container = document.querySelector('.quotation-container');
+    const items = document.querySelectorAll('.quotation');
+    let currentIndex = 0;
+
+    container.addEventListener('wheel', (event) => {
+      event.preventDefault();
+      const delta = event.deltaY;
+      const itemWidth = items[0].offsetWidth;
+      const containerWidth = container.offsetWidth;
+      const maxScroll = container.scrollWidth - containerWidth;
+
+      console.log(`Delta: ${delta}`);
+      console.log(`Item width: ${itemWidth}`);
+      console.log(`Container width: ${containerWidth}`);
+      console.log(`Max scroll: ${maxScroll}`);
+
+      if (delta > 0 && container.scrollLeft < maxScroll) {
+        currentIndex++;
+        container.scrollBy({left: itemWidth, top: 0, behavior: 'smooth'});
+        console.log(`Scrolling right to index ${currentIndex}`);
+      } else if (delta < 0 && container.scrollLeft > 0) {
+        currentIndex--;
+        container.scrollBy({left: -itemWidth, top: 0, behavior: 'smooth'});
+        console.log(`Scrolling left to index ${currentIndex}`);
+      }
+
+      console.log(`Scroll value ${container.scrollLeft}`);
+      // Snap to the nearest item
+      // const nearestIndex = Math.round(container.scrollLeft / itemWidth);
+      const nearestIndex = Math.round(container.scrollLeft / itemWidth);
+      const targetLeft = currentIndex * itemWidth;
+      container.scrollTo({left: targetLeft, top: 0, behavior: 'smooth'});
+      console.log(`Snapping to index ${nearestIndex}`);
+      currentIndex = nearestIndex;
+    }, {passive: false});
+  </script>
+
+  <a href="index.html" id="home-link" target="_top">Home</a>
+</body>
+</html>
