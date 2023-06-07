@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Socicon';
-  src:      url('fonts/socicon.ttf') format('truetype'),
+  src:      url('socicon.ttf') format('truetype');
   /* src:  url('../fonts/socicon.eot?#iefix') format('embedded-opentype'),
     url('../fonts/socicon.woff2') format('woff2'),
     url('../fonts/socicon.ttf') format('truetype'),
