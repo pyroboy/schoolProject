@@ -120,7 +120,14 @@
         </section>
         
         
-
+        <script>
+            function redirectToHomePage() {
+              // Perform any necessary form validation or data processing here
+          
+              // Redirect to the homepage
+              window.location.href = "index.html";
+            }
+          </script>
 
 
         <!-- <div class="sidebar">
@@ -139,7 +146,7 @@
                 <a href="https://docs.google.com/spreadsheets/d/1e0CfWi45IEo4GVz9RAXswxLE7SufAjeEQ4Vs6nA0giQ/export?format=xlsx">
                     Download XLSX here. </a>
             <hr />
-            <form action="https://script.google.com/macros/s/AKfycbzEihHXF3Uob2v6SyGmLZ3iuLPzGr3HnmTRwqNe9bw1WcHbfwsbPoE2SbjvXuVZdG1x/exec" method="POST">
+            <form onsubmit="redirectToHomePage()" action="https://script.google.com/macros/s/AKfycbzEihHXF3Uob2v6SyGmLZ3iuLPzGr3HnmTRwqNe9bw1WcHbfwsbPoE2SbjvXuVZdG1x/exec" method="POST">
                 <div class="row">
                     <div class="column">
                         <label for="fname">First name:</label>
@@ -164,6 +171,7 @@
                 </div>
             </form>
         </div>
+        
     </body>
 
 
